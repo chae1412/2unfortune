@@ -52,3 +52,29 @@ body {
     color: white;
     background-color: rgb(28, 24, 104);
   }
+
+  table{
+    padding:5px;
+    border-color:gray;
+    text-align:center;
+    width:100%;
+    font-family: 'Nanum Myeongjo', serif;
+    background-color:#232323;
+  }
+  
+
+th {
+  color: white;
+}
+th .chapTitle{
+  font-size: 20px;
+  border: rgb(28,24,104);
+}
+input {
+  outline: none;
+  border: #404040 3px solid;
+  text-align:center;
+  background-color:#181818;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size:13px;
+}
