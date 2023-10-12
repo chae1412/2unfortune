@@ -5,7 +5,7 @@ body {
   .intro {
     background: #232323;
     color: #ffffff;
-    font-family: "굴림";
+    font-family: 'Nanum Myeongjo', serif;
     text-align: center;
     font-size: 50px;
   }
@@ -13,13 +13,7 @@ body {
   ol {
     font: 40px white;
   }
-  .intro {
-    background: #232323;
-    color: #ffffff;
-    font-family: "굴림";
-    text-align: center;
-    font-size: 50px;
-  }
+  
 
   img {
     width: 300px;
@@ -30,14 +24,16 @@ body {
 
   .des {
     color: #ffffff;
-    font-family: "굴림";
+    font-family: 'Nanum Myeongjo', serif;
     text-align: center;
   }
 
   .des p {
     font-size: 50px;
   }
-
+.des pre{
+  font-family: 'Nanum Myeongjo', serif;
+}
   .but {
     text-align: center;
   }
@@ -48,8 +44,12 @@ body {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    width: 100;
+  }
+  button {
+    width: 120px;
     height: 50px;
-    font: 25px white;
+    font: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: white;
     background-color: rgb(28, 24, 104);
   }
