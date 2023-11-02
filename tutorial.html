@@ -13,8 +13,18 @@
     <div class="intro">
         <h1>Crime Game</h1>
     </div>
-    <button onclick="showPopup();">챕터 목표</button>
+
+    <table>
+        <tr>
+            <td>
+                <p onclick="clue1();">탐정님께 보내는 의뢰서</p>
+            </td>
+        </tr>
+    </table>
+
+    <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
     <script>
+      function clue1(){window.open("./src/탐정편지1.pdf","a");}
       function showPopup(){window.open("tutoEnd.html","a","width=400,height=300,left=100,top=50");}
     </script>
 </body>

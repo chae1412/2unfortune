@@ -52,24 +52,18 @@ body {
     color: white;
     background-color: rgb(28, 24, 104);
   }
-
-  table{
-    padding:5px;
-    border-color:gray;
-    text-align:center;
-    width:100%;
-    font-family: 'Nanum Myeongjo', serif;
-    background-color:#232323;
+  button.chapEnd{
+    position:sticky;
+    float:right;
   }
   
+  table{
+    background-color:#232323;
+    color:white;
+    font-size:15px;
+  }
 
-th {
-  color: white;
-}
-th .chapTitle{
-  font-size: 20px;
-  border: rgb(28,24,104);
-}
+
 input {
   outline: none;
   border: #404040 3px solid;
