@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Game</title>
+  <!--<link rel="icon" type="image/x-icon" href="/src/crime_.png">-->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="intro">
+    <h1>Crime Game</h1>
+  </div>
+  
+  
+  <!-- 증거목록 -->
+  
+    <table class="list">
+      <tr><th class="clue">이미남 관련 증거</th><th class="clue">이규남 관련 증거</th></tr>
+      <tr>
+        <td class="clue" onclick="minam_clue1();">명함들</td>
+        <td class="clue">증거1</td>
+      </tr>
+      <tr>
+        <td class="clue" onclick="minam_clue2();">도박장 티켓</td>
+        <td class="clue">증거2</td>
+      </tr>
+      <tr>
+        <td class="clue">증거3</td>
+      </tr>
+    </table>
+  
+
+  
+
+  <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
+<script>
+  function minam_clue1(){window.open("../src/ch1_src/미남_명함.pdf","a");}
+  function minam_clue2(){window.open("../src/ch1_src/미남_카지노.png");}
+  function showPopup(){window.open("end1.html","a","width=400,height=300,left=100,top=50");}
+</script>
+</body>
+</html>
