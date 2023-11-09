@@ -28,8 +28,10 @@
         function handleEnter(e){
             if (event.key=="Enter"){
                 chapAnswer=document.getElementById("chapAnswer");
-                if (chapAnswer.value=="정답")
+                if (chapAnswer.value=="정답"){
                     window.open("../Chap2/page2.html","_blank");
+                    window.close();
+                }
                 else    alert("그것은 정답이 아닌 것 같습니다.")
             }
         }
