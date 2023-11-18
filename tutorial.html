@@ -14,17 +14,16 @@
         <h1>Crime Game</h1>
     </div>
 
-    <table>
-        <tr>
-            <td>
-                <p onclick="clue1();">탐정님께 보내는 의뢰서</p>
-            </td>
-        </tr>
+    <table class="list">
+        <tr> <td class="clue" onclick="clue();">
+            <img class="message" src="src/icon_message.png" onclick="clue();">
+            탐정님께 보내는 의뢰서
+        </td> </tr>
     </table>
 
     <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
     <script>
-      function clue1(){window.open("./src/탐정편지1.pdf","a");}
+      function clue(){window.open("./src/의뢰서.pdf","a");}
       function showPopup(){window.open("tutoEnd.html","a","width=400,height=300,left=100,top=50");}
     </script>
 </body>

@@ -17,19 +17,23 @@
   
   
   <!-- 증거목록 -->
+  <div>
+    <img class="message" src="../src/icon_message.png" onclick="clue();">
+  </div>
   
     <table class="list">
       <tr><th class="clue">이미남 관련 증거</th><th class="clue">이규남 관련 증거</th></tr>
       <tr>
-        <td class="clue" onclick="minam_clue1();">명함들</td>
-        <td class="clue">증거1</td>
+        <td class="clue" onclick="minam_clue1();">목격자 진술서 (주하나)</td>
+        <td class="clue" onclick="gyunam_clue1();">목격자 진술서 (박격포)</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue2();">도박장 티켓</td>
-        <td class="clue">증거2</td>
+        <td class="clue" onclick="minam_clue2();">용의자 진술서 (류바람)</td>
+        <td class="clue" onclick="gyunam_clue2();">용의자 진술서 (김수연)</td>
       </tr>
       <tr>
-        <td class="clue">증거3</td>
+        <td class="clue" onclick="minam_clue3();">용의자 진술서 (민훈)</td>
+        <td class="clue" onclick="gyunam_clue3();">용의자 진술서 (배광수)</td>
       </tr>
     </table>
   
@@ -37,9 +41,25 @@
   
 
   <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
+
+  
 <script>
-  function minam_clue1(){window.open("../src/ch1_src/미남_명함.pdf","a");}
-  function minam_clue2(){window.open("../src/ch1_src/미남_카지노.png");}
+
+  //증거 함수
+  function clue(){window.open("../src/ch1_src/챕터1_의뢰서");}
+  
+  function minam_clue0(){window.open("../src/ch1_src/이미남_사체검안서.pdf");}
+  function minam_clue1(){window.open("../src/ch1_src/주하나_목격자.pdf");}
+  function minam_clue2(){window.open("../src/ch1_src/류바람_진술.pdf");}
+  function minam_clue2(){window.open("../src/ch1_src/민훈_진술.pdf");}
+
+  function gyunam_clue0(){window.open("../src/ch1_src/이규남_사체검안서.pdf");}
+  function gyunam_clue1(){window.open("../src/ch1_src/박격포_목격자.pdf");}
+  function gyunam_clue2(){window.open("../src/ch1_src/김수연_진술.pdf");}
+  function gyunam_clue2(){window.open("../src/ch1_src/배광수_진술.pdf");}
+
+
+  
   function showPopup(){window.open("end1.html","a","width=400,height=300,left=100,top=50");}
 </script>
 </body>
