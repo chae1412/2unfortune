@@ -28,8 +28,11 @@
         function handleEnter(e){
             if (event.key=="Enter"){
                 chapAnswer=document.getElementById("chapAnswer");
-                if (chapAnswer.value=="예")
+                if (chapAnswer.value=="예"){
                     window.open("./Chap1/page1.html","_blank");
+                    window.close();
+                }
+                   
                 else if (chapAnswer.value=="아니오")
                     window.close();
                 else    alert("그것은 정답이 아닌 것 같습니다.")

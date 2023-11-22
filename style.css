@@ -1,17 +1,36 @@
+html{
+  text-align:center;
+}
+
 body {
     background: #000000;
+    max-height:min-content;;
+    display:inline-block;
+    width:90%;
+    text-align:center;
   }
 
   .intro {
-    background: #232323;
+    text-align: center;
+    padding: 20px;
+    width:40%;
+    height:10%;
+    max-height:min-content;
+  }
+  div.intro{
+    width:100%;
     color: #ffffff;
     font-family: 'Nanum Myeongjo', serif;
-    text-align: center;
-    font-size: 50px;
+    font-size:300%;
+    text-align:center;
+    padding:0px;
+    background:#232323;
   }
-
   ol {
     font: 40px white;
+  }
+  th.clue{
+    cursor:default;
   }
   
 
@@ -29,7 +48,8 @@ body {
   }
 
   .des p {
-    font-size: 50px;
+    font-size: 90%;
+    border:0px;
   }
 .des pre{
   font-family: 'Nanum Myeongjo', serif;
@@ -51,16 +71,20 @@ body {
   button.chapEnd{
     position:sticky;
     float:right;
+    width: 20%;
+    height:8%;
+    font-size:80%;
   }
   
   table{
-    background:#232323;
     color:white;
-    font-size:15px;
+    text-align:centor;
+    font-size:100%;
     width:100%;
     left:50%;
     border:0;
     padding:3px;
+    cursor:default;
   }
   .list{
     background:none;
@@ -73,17 +97,14 @@ body {
   td, th{
     background:#232323;
     text-align:center;
-    border:0;
+    border-radius:15px;
+    border: 3px solid #000000;
     font-family: 'Nanum Myeongjo', serif;
     width:40%;
+    padding:10px;
   }
 
   .clue{
-    border-radius:15px;
-    padding:10px;
-    border: 3px solid #000000;
-  }
-  td .clue{
     cursor:pointer;
   }
 
@@ -108,9 +129,11 @@ p {
 }
 
 img.message{
-  width:34px;
-  height:22px;
+  max-width:34px;
+  max-height:22px;
+  top:8%;
   display:inline-block;
-  vertical-align:top;
-  left:20%
+  left: 20%;
+  cursor:pointer;
+  position:fixed;
 }

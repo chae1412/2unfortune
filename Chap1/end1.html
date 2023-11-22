@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1챕터 목표</title>
+    <title>Chapter 1 목표</title>
     <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,18 +11,24 @@
 </head>
 <body>
     <table>
-        <tr><th class="chapTitle">1챕터 목표</th></tr>
+        <tr><th class="chapTitle">Chapter 1 목표</th></tr>
         <tr>
             <th>
-                <p>
-                    두 사건의 흉기는 각각 무엇인가?<br>
-                    '정답'의 형태로 입력하시오.
-               </p>
+                용의자들이 두 피해자 이규남과 이미남 중 누구와 관련되어 있는지 체크하시오.
             </th>
         </tr>
-        <tr><th><input type="text" id="chapAnswer" onkeydown="handleEnter(event);"></th></tr>
+        <tr><td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;규남&nbsp;&nbsp;미남
+            <br>김수연&nbsp;<input type="radio" name="Kim" value="1">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Kim" value="0">
+            <br>류바람&nbsp;<input type="radio" name="Ryu" value="0">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Ryu" value="1">
+            <br>&nbsp;&nbsp;&nbsp;민훈&nbsp;<input type="radio" name="Min" value="0">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Min" value="1">
+            <br>배광수&nbsp;<input type="radio" name="Bae" value="1">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Bae" value="0">
+            <br><button class="chapEnd" onclick="">제출</button>
+        </td></tr>
     </table>
       <script>
+
+
         var chapAnswer;
 
         function handleEnter(e){
