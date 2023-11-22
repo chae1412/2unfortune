@@ -19,16 +19,72 @@
         </tr>
         <tr><td>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;규남&nbsp;&nbsp;미남
-            <br>김수연&nbsp;<input type="radio" name="Kim" value="1">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Kim" value="0">
-            <br>류바람&nbsp;<input type="radio" name="Ryu" value="0">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Ryu" value="1">
-            <br>&nbsp;&nbsp;&nbsp;민훈&nbsp;<input type="radio" name="Min" value="0">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Min" value="1">
-            <br>배광수&nbsp;<input type="radio" name="Bae" value="1">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Bae" value="0">
-            <br><button class="chapEnd" onclick="">제출</button>
+            <form id="answer">
+            <br>김수연&nbsp;<input type="radio" name="Kim" value="true">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Kim" value="false">
+            <br>류바람&nbsp;<input type="radio" name="Ryu" value="false">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Ryu" value="true">
+            <br>&nbsp;&nbsp;&nbsp;민훈&nbsp;<input type="radio" name="Min" value="false">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Min" value="true">
+            <br>배광수&nbsp;<input type="radio" name="Bae" value="true">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Bae" value="false">
+            <br><button class="chapEnd" onclick="chapEnd();">제출</button>
+            </form>
         </td></tr>
     </table>
-      <script>
+
+    <script>
+        
+        function chapEnd(){
+            if (checkRadio("Kim"))
+            var kim = checkRadio("Kim");
+            var ryu = checkRadio("Ryu");
+            var min = checkRadio("Min");
+            var bae = checkRadio("Bae");
+
+            if((kim&&ryu&&min&&bae)==true){
+                window.open("../Chap2/page2.html","_blank");
+                window.close();
+            } else alert("그것은 정답이 아닌 것 같습니다.");
+        }
+
+        function checkRadio(name){
+            var radio=document.getElementsByName(name);
+            var checkedValue;
+            for (var i=0;i<2;i++){
+                if (radio[i].checked){
+                    if (radio[i].value=="true"){
+                        return true;
+                    } else (radio[i].value=="false")
+                        return false;
+                    }
+                }
+            }
+        
+    </script>
 
 
+
+    <!-- <script>
+        var name=["Kim","Ryu","Min","Bae"];
+        var value=[];
+        var i,j;
+
+        function chapEnd(){
+            for (i=0;i<4;i++){
+                var radios=document.getElementsByName(name[i]);
+                for (j=0;j<2;j++){
+                    if (radios[j].checked){
+                        value.push(radios[j].value);
+                        break;
+                    }
+                }
+            }
+
+            if (value.every(function(value){return value===true;})){
+                window.open("../Chap2/page2.html","_blank");
+                window.close();
+            }
+            else alert("그것은 정답이 아닌 것 같습니다.");
+        }
+    </script> -->
+    <!-- <script>
         var chapAnswer;
 
         function handleEnter(e){
@@ -41,6 +97,6 @@
                 else    alert("그것은 정답이 아닌 것 같습니다.")
             }
         }
-      </script>
+      </script> -->
 </body>
 </html>

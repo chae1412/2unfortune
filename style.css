@@ -132,8 +132,7 @@ img.message{
   max-width:34px;
   max-height:22px;
   top:8%;
-  display:inline-block;
   left: 20%;
   cursor:pointer;
-  position:fixed;
+  position:sticky;
 }
