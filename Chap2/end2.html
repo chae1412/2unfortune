@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>의뢰 수락</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Chapter 2 목표</title>
+    <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body>
     <table>
-        <tr><th class="chapTitle">튜토리얼 목표</th></tr>
+        <tr><th class="chapTitle">2챕터 목표</th></tr>
         <tr>
             <th>
                 <p>
-                    사건 의뢰를 수락하시겠습니까?<br>
-                    '예' 혹은 '아니오'의 형태로 대답하시오.
+                    류바람의 USB를 열기 위한
+                    비밀번호를 입력하시오.
                </p>
             </th>
         </tr>
@@ -28,14 +28,9 @@
         function handleEnter(e){
             if (event.key=="Enter"){
                 chapAnswer=document.getElementById("chapAnswer");
-                if (chapAnswer.value=="예"){
-                    window.open("./Chap1/page1.html","_blank");
-                    window.close();
-                }
-                   
-                else if (chapAnswer.value=="아니오")
-                    window.close();
-                else    alert("정답이 아닌 것 같습니다.")
+                if (chapAnswer.value=="52437365")
+                    window.open("../Chap3/page3.html","_blank");
+                else    alert("그것은 정답이 아닌 것 같습니다.")
             }
         }
       </script>

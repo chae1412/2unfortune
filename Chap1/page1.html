@@ -13,7 +13,6 @@
 <body>
   <img src="../src/title.png" class="intro">
   
-  
   <!-- 증거목록 -->
     <img class="message" src="../src/icon_message.png" onclick="clue();">
   
@@ -21,49 +20,53 @@
       <tr></tr>
       <tr><th class="clue">이미남 관련 증거</th><th class="clue">이규남 관련 증거</th></tr>
       <tr>
-        <td class="clue" onclick="minam_clue0();">사건현장 (이규남, 골목길)</td>
-        <td class="clue" onclick="gyunam_clue0();">사건현장 (이미남의 집)</td>
+        <td class="clue" onclick="minam_clue0();">사건현장</td>
+        <td class="clue" onclick="gyunam_clue0();">사건현장</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue1();">사체검안서 (이미남)</td>
-        <td class="clue" onclick="gyunam_clue1();">사체검안서 (이규남)</td>
+        <td class="clue" onclick="minam_clue1();">사체검안서<td>
+        <td class="clue" onclick="gyunam_clue1();">사체검안서</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue2();">목격자 진술서 (주하나)</td>
-        <td class="clue" onclick="gyunam_clue2();">목격자 진술서 (박격포)</td>
+        <td class="clue" onclick="minam_clue2();">목격자 진술서</td>
+        <td class="clue" onclick="gyunam_clue2();">목격자 진술서</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue3();">참고인 조사서 (류바람)</td>
-        <td class="clue" onclick="gyunam_clue3();">참고인 조사서 (김수연)</td>
+        <td class="clue" onclick="minam_clue3();">참고인 조사서</td>
+        <td class="clue" onclick="gyunam_clue3();">참고인 조사서</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue4();">참고인 조사서 (민훈)</td>
-        <td class="clue" onclick="gyunam_clue4();">참고인 조사서 (배광수)</td>
+        <td class="clue" onclick="minam_clue4();">참고인 조사서</td>
+        <td class="clue" onclick="gyunam_clue4();">참고인 조사서</td>
       </tr>
     </table>
   
 
   
 
-  <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
+  <button id="btn" class="chapEnd" onclick="showPopup();">챕터 목표</button>
 
   
 <script>
 
   //증거 함수
-  function clue(){window.open("../src/ch1_src/챕터1_의뢰서");}
+  function clue(){
+    var btn=document.getElementById("btn");
+    btn.style.display='block';
+    window.open("../src/ch1_src/챕터1_의뢰서","a","width=470, height=720");
+  }
   
-  function minam_clue0(){window.open("../src/ch1_src/이미남_사건현장.pdf");}
-  function minam_clue1(){window.open("../src/ch1_src/이미남_사체검안서.pdf");}
-  function minam_clue2(){window.open("../src/ch1_src/주하나_목격자.pdf");}
-  function minam_clue3(){window.open("../src/ch1_src/류바람_진술.pdf");}
-  function minam_clue4(){window.open("../src/ch1_src/민훈_진술.pdf");}
+  function minam_clue0(){window.open("../src/ch1_src/이미남_사건현장.pdf","m0","width=500, height=380");}
+  function minam_clue1(){window.open("../src/ch1_src/이미남_사체검안서.pdf","m1","width=470, height=720");}
+  function minam_clue2(){window.open("../src/ch1_src/주하나_목격자.pdf","m2","width=470, height=720");}
+  function minam_clue3(){window.open("../src/ch1_src/류바람_진술.pdf","m3","width=470, height=720");}
+  function minam_clue4(){window.open("../src/ch1_src/민훈_진술.pdf","m4","width=470, height=720");}
 
-  function gyunam_clue0(){window.open("../src/ch1_src/이규남_사건현장.pdf");}
-  function gyunam_clue1(){window.open("../src/ch1_src/이규남_사체검안서.pdf");}
-  function gyunam_clue2(){window.open("../src/ch1_src/박격포_목격자.pdf");}
-  function gyunam_clue3(){window.open("../src/ch1_src/김수연_진술.pdf");}
-  function gyunam_clue4(){window.open("../src/ch1_src/배광수_진술.pdf");}
+  function gyunam_clue0(){window.open("../src/ch1_src/이규남_사건현장.pdf","g0","width=500, height=420");}
+  function gyunam_clue1(){window.open("../src/ch1_src/이규남_사체검안서.pdf","g1","width=470, height=720");}
+  function gyunam_clue2(){window.open("../src/ch1_src/박격포_목격자.pdf","g2","width=470, height=720");}
+  function gyunam_clue3(){window.open("../src/ch1_src/김수연_진술.pdf","g3","width=470, height=720");}
+  function gyunam_clue4(){window.open("../src/ch1_src/배광수_진술.pdf","g4","width=470, height=720");}
 
 
   

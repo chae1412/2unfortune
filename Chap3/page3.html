@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 2</title>
+  <title>Chapter 3</title>
   <!--<link rel="icon" type="image/x-icon" href="/src/crime_.png">-->
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,11 +39,11 @@
         <td class="clue" onclick="gyunam_clue3();">증거2</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue5();">블랙박스 캡처</td>
+        <td class="clue" onclick="minam_clue5();">채무증명서</td>
         <td class="clue" onclick="gyunam_clue3();">증거2</td>
       </tr> 
       <tr>
-        <td class="clue" onclick="minam_clue6();">USB</td>
+        <td class="clue" onclick="minam_clue6();">블랙박스 캡처</td>
         <td class="clue" onclick="gyunam_clue3();">증거2</td>
       </tr> 
     </table>
@@ -53,7 +53,7 @@
   function clue(){
     var btn=document.getElementById("btn");
     btn.style.display='block';
-    window.open("../src/ch2_src/챕터2_의뢰서","a","width=470, height=720");
+    window.open("../src/ch3_src/챕터3_의뢰서","a","width=470, height=720");
   }
   
   function minam_clue0(){window.open("../src/ch2_src/이미남_명함.pdf","m0","width=330, height=720");}
@@ -63,6 +63,7 @@
   function minam_clue4(){window.open("../src/ch2_src/류바람_영수증.pdf","m4","width=470, height=720");}
   function minam_clue5(){window.open("../src/ch2_src/민훈_드라이브.pdf","m5","width=470, height=720");}
   function minam_clue6(){window.open("../src/ch2_src/류바람_usb.pdf","m6","width=470, height=720");}
+  function minam_clue7(){window.open("../src/ch2_src/류바람_영수증.pdf","m7","width=470, height=720");}
 
   function gyunam_clue0(){window.open("../src/ch2_src/이규남_채무업.pdf","g0","width=470, height=620");}
   function gyunam_clue1(){window.open("../src/ch2_src/이규남_사체검안서.pdf","g1","width=470, height=720");}
@@ -70,7 +71,9 @@
   function gyunam_clue3(){window.open("../src/ch2_src/김수연_진술.pdf","g3","width=470, height=720");}
   function gyunam_clue4(){window.open("../src/ch2_src/배광수_진술.pdf","g4","width=470, height=720");}
 
-  function showPopup(){window.open("end2.html","a","width=400,height=300,left=100,top=50");}
+
+  
+  function showPopup(){window.open("end3.html","a","width=400,height=300,left=100,top=50");}
 </script>
 </body>
 </html>

@@ -15,14 +15,19 @@
     <table class="list">
         <tr> <td class="clue" onclick="clue();">
             <img class="message" style="position:static;"src="src/icon_message.png" onclick="clue();">
-            &nbsp;탐정님께 보내는 의뢰서
+
+            <br>탐정님께 보내는 의뢰서
         </td> </tr>
     </table>
 
-    <button class="chapEnd" onclick="showPopup();">챕터 목표</button>
+    <button id="btn" class="chapEnd" onclick="showPopup();">챕터 목표</button>
     <script>
-      function clue(){window.open("./src/의뢰서.pdf","a");}
-      function showPopup(){window.open("tutoEnd.html","a","width=400,height=300,left=100,top=50");}
+        function clue(){
+            var btn=document.getElementById("btn");
+            btn.style.display='block';
+            window.open("./src/의뢰서.pdf","a", "width=470, height=700");
+        }
+        function showPopup(){window.open("tutoEnd.html","b","width=400,height=250,left=100,top=50");}
     </script>
 </body>
 </html>

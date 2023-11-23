@@ -71,9 +71,12 @@ body {
   button.chapEnd{
     position:sticky;
     float:right;
-    width: 20%;
-    height:8%;
-    font-size:80%;
+    width:auto;
+    height:auto;
+    font-size:90%;
+  }
+  button#btn{
+    display:none;
   }
   
   table{
