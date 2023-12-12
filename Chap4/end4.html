@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3 목표</title>
+    <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <tr><th class="chapTitle">4챕터 목표</th></tr>
+        <tr>
+            <th>
+                <p>
+                    이미남, 이규남을 살해한 범인을 순서대로 띄어쓰기 없이 예시와 같이 적으시오.<br>
+                    (예, 이미남,이규남)
+               </p>
+            </th>
+        </tr>
+        <tr><th><input type="text" id="chapAnswer" onkeydown="handleEnter(event);"></th></tr>
+    </table>
+      <script>
+        var chapAnswer;
+
+        function handleEnter(e){
+            if (event.key=="Enter"){
+                chapAnswer=document.getElementById("chapAnswer");
+                if (chapAnswer.value=="배광수,민훈"){
+                    window.open("../Chap4/마지막편지.pdf","a2","width=470, height=720");
+                }
+                else    alert("그것은 정답이 아닌 것 같습니다.")
+            }
+        }
+      </script>
+</body>
+</html>
