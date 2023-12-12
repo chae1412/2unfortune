@@ -28,8 +28,10 @@
         function handleEnter(e){
             if (event.key=="Enter"){
                 chapAnswer=document.getElementById("chapAnswer");
-                if (chapAnswer.value=="선영씨")
+                if (chapAnswer.value=="선영씨"){
                     window.open("../Chap4/page4.html","_blank");
+                    window.close();
+                }
                 else    alert("그것은 정답이 아닌 것 같습니다.")
             }
         }
