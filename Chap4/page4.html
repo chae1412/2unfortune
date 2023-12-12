@@ -8,6 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <style>
+    #passwordModal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #passwordModalContent {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+  </style>
 </head>
 <body>
   <img src="../src/title.png" class="intro">
@@ -31,20 +52,44 @@
       </tr>
 
   <button id="btn" class="chapEnd" onclick="showPopup();">챕터 목표</button>
+
+  <div id="passwordModal">
+    <div id="passwordModalContent">
+      <label for="passwordInput">Enter Password:</label>
+      <input type="password" id="passwordInput">
+      <button onclick="checkPassword()">Submit</button>
+    </div>
+  </div>
+
 <script>
+  var correctAnswer = "1122";
+
   function clue(){
     var btn=document.getElementById("btn");
     btn.style.display='block';
     window.open("../src/ch4_src/챕터4_의뢰서.pdf","a4","width=470, height=720");
   }
-  
+
   function minam_clue0(){window.open("민훈.html","4m0","width=470, height=720");}
   
-  function gyunam_clue0(){window.open("이규남.html","4g0","width=470, height=720");}
+  function gyunam_clue0(){
+    window.open("../src/ch4_src/잠금화면.jpeg","4g0","width=470, height=720");
+    document.getElementById('passwordModal').style.display = 'block';
+  }
+  function checkPassword() {
+        var userAnswer = document.getElementById('passwordInput').value;
+
+        if (userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+          window.open("../src/ch4_src/이규남_통화기록.pdf", "4g0", "width=470, height=720");
+        } else {
+          alert("비밀번호가 틀렸습니다");
+        }
+
+        document.getElementById('passwordModal').style.display = 'none';
+      }
   function gyunam_clue1(){window.open("../src/ch4_src/배광수_찢어진쪽지.png","4g1","width=470, height=720");}
   function gyunam_clue2(){window.open("../src/ch3_src/배광수_편지.pdf","4g2","width=470, height=720");}
 
-  
   function showPopup(){window.open("end4.html","e4","width=400,height=300,left=100,top=50");}
 </script>
 </body>
