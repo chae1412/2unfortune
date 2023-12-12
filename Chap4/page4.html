@@ -18,64 +18,34 @@
     <table class="list">
       <tr><th class="clue">이미남 관련 증거</th><th class="clue">이규남 관련 증거</th></tr>
       <tr>
-        <td class="clue" onclick="minam_clue0();">류바람의 송금 캡처</td>
-        <td class="clue" onclick="gyunam_clue0();">김수연의 일기</td>
+        <td class="clue" onclick="minam_clue0();">민훈의 잠긴 USB</td>
+        <td class="clue" onclick="gyunam_clue0();">복구된 이규남의 스마트폰</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue1();">이미남의 편지</td>
-        <td class="clue" onclick="gyunam_clue1();">배광수 근로계약서 1</td>
-      </tr>
-      <tr>
-        <td class="clue" onclick="minam_clue2();">사내 익명게시판</td>
-        <td class="clue" onclick="gyunam_clue2();">배광수 근로계약서 2</td>
-      </tr>
-      <tr>
-        <td class="clue" onclick="minam_clue3();">민훈의 메모</td>
-        <td class="clue" onclick="gyunam_clue3();">배광수 부동산 매각 서류</td>
-      </tr>
-      <tr>
-        <td class="clue" onclick="minam_clue4();">황진철 진술서</td>
         <td></td>
+        <td class="clue" onclick="gyunam_clue1();">찢어진 쪽지</td>
       </tr>
       <tr>
-        <td class="clue" onclick="minam_clue5();">황진철 통화기록</td>
         <td></td>
-      </tr> 
-      <tr>
-        <td class="clue" onclick="minam_clue6();">이미남이 받은 편지</td>
-        <td></td>
-      </tr> 
-      <tr>
-        <td class="clue" onclick="minam_clue7();">황진철의 명함</td>
-        <td></td>
-      </tr> 
-    </table>
+        <td class="clue" onclick="gyunam_clue2();">쪽지들</td>
+      </tr>
 
   <button id="btn" class="chapEnd" onclick="showPopup();">챕터 목표</button>
 <script>
   function clue(){
     var btn=document.getElementById("btn");
     btn.style.display='block';
-    window.open("../src/ch3_src/챕터3_의뢰서.pdf","a3","width=470, height=720");
+    window.open("../src/ch4_src/챕터4_의뢰서.pdf","a4","width=470, height=720");
   }
   
-  function minam_clue0(){window.open("../src/ch3_src/류바람_계좌이체.pdf","3m0","width=470, height=720");}
-  function minam_clue1(){window.open("../src/ch3_src/류바람_이미남_편지2.pdf","3m1","width=470, height=720");}
-  function minam_clue2(){window.open("../src/ch3_src/민훈_익명게시판.pdf","3m2","width=470, height=720");}
-  function minam_clue3(){window.open("../src/ch3_src/민훈_진철_편지.pdf","3m3","width=470, height=720");}
-  function minam_clue4(){window.open("../src/ch3_src/황진철_진술.pdf","3m4","width=470, height=720");}
-  function minam_clue5(){window.open("../src/ch3_src/황진철_통화기록.pdf","3m5","width=470, height=720");}
-  function minam_clue6(){window.open("../src/ch3_src/이미남_편지.pdf","3m6","width=470, height=720");}
-  function minam_clue7(){window.open("../src/ch3_src/황진철_명함.png","3m7","width=470, height=720");}
-
-  function gyunam_clue0(){window.open("../src/ch3_src/김수연_일기장.pdf","g0","width=470, height=720");}
-  function gyunam_clue1(){window.open("../src/ch3_src/배광수_근로계약서1.pdf","g1","width=470, height=720");}
-  function gyunam_clue2(){window.open("../src/ch3_src/배광수_근로계약서2.pdf","g2","width=470, height=720");}
-  function gyunam_clue3(){window.open("../src/ch3_src/배광수_부동산매각자금확인서.pdf","g3","width=470, height=720");}
+  function minam_clue0(){window.open("민훈.html","4m0","width=470, height=720");}
   
+  function gyunam_clue0(){window.open("이규남.html","4g0","width=470, height=720");}
+  function gyunam_clue1(){window.open("../src/ch4_src/배광수_찢어진쪽지.png","4g1","width=470, height=720");}
+  function gyunam_clue2(){window.open("../src/ch3_src/배광수_편지.pdf","4g2","width=470, height=720");}
 
   
-  function showPopup(){window.open("end3.html","e3","width=400,height=300,left=100,top=50");}
+  function showPopup(){window.open("end4.html","e4","width=400,height=300,left=100,top=50");}
 </script>
 </body>
 </html>
