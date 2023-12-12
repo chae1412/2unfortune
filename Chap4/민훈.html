@@ -3,38 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2unfortune</title>
+    <title>USB 드라이브</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body id="usb">
-    <div id="before">
-        <p style="color:black;border:0;">비밀번호를 입력하시오.<br>HINT:비밀번호 = -(SU)</p>
-        <input type="text" id="usb" style="color:black;"onkeydown="handleEnter(event);">
-    </div>
-    <div id="after">
 
+    <div id="before">
+        <p style="color:black;border:0;">비밀번호를 입력하시오.<br>HINT: 비밀번호 = -(SU)</p>
+        <input type="text" id="chapAnswer" style="color:black;background-color:white;"onkeydown="handleEnter(event);">
+    </div>
+
+    <div id="after">
+        <h3>USB 드라이브(D:)</h3>
+        <button class="file" onclick="file0();" style="position: relative;">
+            <img src="../src/ch4_src/icon.png" style="height: 1em; width: 1em; position: absolute; top: 50%; transform: translateY(-50%);">
+            <span style="margin-left: 1em;">계약서 샘플.pdf</span>
+          </button>
+          <button class="file" onclick="file1();" style="position: relative;">
+              <img src="../src/ch4_src/icon.png" style="height: 1em; width: 1em; position: absolute; top: 50%; transform: translateY(-50%);">
+              <span style="margin-left: 1em;">불륜현장.pdf</span>
+            </button>
+            <button class="file" onclick="file2();" style="position: relative;">
+                <img src="../src/ch4_src/icon.png" style="height: 1em; width: 1em; position: absolute; top: 50%; transform: translateY(-50%);">
+                <span style="margin-left: 1em;">코드.pdf</span>
+              </button>
+        </table>
     </div>
 
     <script>
-        var usb;
-        var before=document.getElementById("before");
-        var after=document.getElementById("after");
+        var chapAnswer;
 
-    function handleEnter(e){
-        if (event.key=="Enter"){
-            usb=document.getElementById("usb");
-            if (usb.value=="39589"){
-                window.open("../Chap4/page4.html","_blank");
-                window.close();
-                before.style.display='none';
-                after.style.display='block';
+        function handleEnter(e){
+            if (event.key=="Enter"){
+                chapAnswer=document.getElementById("chapAnswer");
+                if (chapAnswer.value=="39589"){
+                    var before=document.getElementById("before");
+                    var after=document.getElementById("after");
+                    before.style.display='none';
+                    after.style.display='block';
+                }
+                else    alert("비밀번호가 틀렸습니다.")
             }
-            else    alert("그것은 정답이 아닌 것 같습니다.")
         }
-    }
+
+        function file0(){window.open("../src/ch3_src/민훈_계약서샘플.pdf","f0","width=470, height=720")}
+        function file1(){window.open("../src/ch4_src/불륜현장.pdf","f1","width=470, height=720")}
+        function file2(){window.open("../src/ch4_src/코드.pdf","f2","width=470, height=720")}
+        
+        
     </script>
 </body>
 </html>
